@@ -3,6 +3,9 @@
   --neutral: #161616;
   --secondary: #c6c6c6;
   --primary: ;
+  --background-img-color: #393939;
+  --buttion-color: #6f6f6f;
+  
 }
 
 * {
@@ -39,4 +42,54 @@ ul {
 .logo{
     color: white;
     font-size: 1.42rem;
+}
+
+
+
+.hero{
+  display: grid;
+  place-content: center;
+}
+
+.hero__profile{
+  display: grid;
+  place-content: center;
+  background-color: var(--background-img-color);
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto;
+}
+
+.hero__profile img{
+  width: 83px;
+  height: 83px;
+}
+
+.hero__summary{
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.hero__greeting{
+  color: var(--secondary);
+  font-size: 1.2rem;
+  margin: 2.5rem 0;;
+}
+
+.hero__location{
+  color: white;
+  font-size: 3rem;
+  width: 718px;
+}
+
+.hero__view{
+  text-align: center;
+  background-color: var(--buttion-color);
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+
+
 }
