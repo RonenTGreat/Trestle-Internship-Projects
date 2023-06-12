@@ -3,10 +3,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-html,
-body {
+.start_body {
   background-color: #392657;
 }
 
@@ -22,7 +22,6 @@ a {
 }
 
 .start__button {
-  font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   display: grid;
   text-transform: uppercase;
@@ -32,6 +31,10 @@ a {
   height: 165px;
   border-radius: 50%;
   background-color: #d9d9d9;
+}
+
+.start__button:hover {
+  opacity: 0.8;
 }
 
 .pulse {
@@ -45,4 +48,86 @@ a {
   100% {
     box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
   }
+}
+
+/* Home Styles */
+
+.home-main {
+  display: grid;
+  place-content: center;
+  height: 85vh;
+}
+
+.home_body {
+  background: linear-gradient(180deg, #392657 0%, rgba(57, 38, 87, 0.8) 100%);
+  background-repeat: no-repeat;
+  padding-bottom: 0.5rem;
+}
+
+.home-main > img {
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 10rem;
+}
+
+.nav-link {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #a178b9;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  margin-bottom: -0.5rem;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.home-name {
+  background: linear-gradient(186.21deg, #a178b9 -23.45%, #cc8bf2 169.11%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.3em;
+  font-size: 5.6rem;
+}
+
+.home-para {
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 39px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
