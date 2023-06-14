@@ -52,13 +52,15 @@ a {
 
 /* Home Styles */
 
-.home-main {
+.home-main,
+.about-main {
   display: grid;
   place-content: center;
-  height: 85vh;
 }
 
-.home_body {
+.home_body,
+.about_body,
+.projects_body {
   background: linear-gradient(180deg, #392657 0%, rgba(57, 38, 87, 0.8) 100%);
   background-repeat: no-repeat;
   padding-bottom: 0.5rem;
@@ -130,4 +132,156 @@ a {
   letter-spacing: 0.1em;
   color: #ffffff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* About Styles */
+
+.about-main {
+  display: grid;
+  place-content: start;
+  margin-left: 3rem;
+}
+
+.about-head {
+  font-weight: 700;
+  font-size: 6.8rem;
+  background: radial-gradient(
+    1044.27% 1044.27% at 50% 50%,
+    #cc8bf2 0%,
+    rgba(204, 139, 242, 0) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about-section {
+  display: inline-grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.underline::after {
+  border-bottom: 2px solid white;
+  width: 4rem;
+}
+
+.about-para {
+  color: white;
+  font-size: 1.7rem;
+  line-height: 39px;
+  letter-spacing: 0.1em;
+}
+
+.cloud-img {
+  width: 650px;
+}
+
+/* Project Styles */
+
+.main-project {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 3rem;
+  row-gap: 3rem;
+
+  padding-bottom: 13rem;
+}
+
+.project-img img {
+  width: 350px;
+  height: 300px;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: border-radius 1s;
+}
+
+.project-img img:hover{
+  border-radius: 0rem;
+}
+
+
+.project-items {
+  display: grid;
+  place-content: center;
+}
+
+.project-title {
+  text-align: center;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.project-link {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .start {
+    row-gap: 8rem;
+  }
+  .start img {
+    margin-top: 5rem;
+    width: 300px;
+  }
+
+  .start__button {
+    font-size: 1.5rem;
+    width: 100px;
+    height: 100px;
+  }
+
+  .nav > ul {
+    gap: 2rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .home-main {
+    padding-bottom: 10rem;
+  }
+
+  .home-main > img {
+    width: 300px;
+  }
+
+  .home-name {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .home-para {
+    font-size: 1rem;
+  }
+
+  .about-head {
+    font-size: 2rem;
+  }
+
+  .about-para {
+    font-size: 1rem;
+  }
+
+  .cloud-img {
+    width: 350px;
+  }
+
+  .about-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .main-project {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .project-items {
+    margin-bottom: 5rem;
+  }
+
+  .project-img img {
+    width: 300px;
+  }
 }
