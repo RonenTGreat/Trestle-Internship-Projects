@@ -241,7 +241,7 @@ a {
   }
 
   .home-main {
-    padding-bottom: 10rem;
+    padding-bottom: 12rem;
   }
 
   .home-main > img {
@@ -283,5 +283,12 @@ a {
 
   .project-img img {
     width: 300px;
+  }
+}
+
+@media(max-width: 425px){
+  .cloud-img{
+    width: 300px;
+    margin-left: -3rem;
   }
 }
